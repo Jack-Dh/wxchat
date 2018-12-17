@@ -9,14 +9,10 @@
             <van-cell title="我的参与" is-link to="ActivitiesDetails"/>
             <van-cell title="其他" is-link />
         </div>
-
-
-
-
     </div>
 </template>
 
-<script>
+<script>//
     export default {
         name: "MyctiList",
         data(){
