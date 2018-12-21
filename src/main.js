@@ -7,10 +7,9 @@ import vant from 'vant'
 import 'vant/lib/index.css'
 import  './assets/iconfont/iconfont.css'
 import VueCookies from 'vue-cookies'
+import http from 'vue-resource'
 
-
-
-axios.defaults.headers.common['token'] = 'oXVhPFHctMnkBzfKzi5K4YVwwcYnaH3A2GBndMzRB6mU4nPZJVsmiTLY9QB4MGlb';
+Vue.use(http)
 
 Vue.use(VueCookies)
 
@@ -20,6 +19,9 @@ Vue.prototype.$axios=axios
 Vue.use(vant)
 
 Vue.config.productionTip = false
+
+axios.defaults.headers.common['token'] =VueCookies.get('wxtoken');//给所有请求头设置token
+// axios.defaults.headers.common['token']='dWQLjFzlPUqqP62qHSnKvu16BZUl1lVvh5ZyJ3cNZSaE33UyZX8y5mS7c5cudoe9'
 
 new Vue({
   router,
