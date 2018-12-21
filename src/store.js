@@ -9,6 +9,7 @@ export default new Vuex.Store({
       ctiList:'http://jiajiachuang.cn/junran/client/activity/search',//所有活动信息
       activity:'http://jiajiachuang.cn/junran/client/activity/get',//单条活动信息
       user:'http://jiajiachuang.cn/junran/client/account/get',//用户信息
+<<<<<<< HEAD
       useractivity:'http://jiajiachuang.cn/junran/client/useractivity/list',//当前用户参与所有活动的列表
       Upload:'http://jiajiachuang.cn/junran/wxUploadPic/Upload',//上传图片
       upsert:'http://jiajiachuang.cn/junran/client/useractivity/upsert',//用户参与活动
@@ -16,6 +17,8 @@ export default new Vuex.Store({
       account:'http://jiajiachuang.cn/junran/client/account/list?',//首页消息轮播
 
 
+=======
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
   },
   mutations: {
 

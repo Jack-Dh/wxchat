@@ -5,10 +5,13 @@ import framework from './views/framework'
 import ctiList from './activity/ctiList'
 import MyctiList from './MyaCti/MyctiList'
 import ActivitiesDetails from './MyaCti/ActivitiesDetails'
+<<<<<<< HEAD
 import Eventdetails from './activity/EventDetails'
 import award from './activity/award'
 import ParticipateDetails from './MyaCti/ParticipateDetails'
 import reload from './pulic/reload'
+=======
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
 
 Vue.use(Router)
 
@@ -23,6 +26,7 @@ export default new Router({
         // },
         {
             path: '/',
+<<<<<<< HEAD
             name: 'reload',
             component: reload
         },
@@ -34,15 +38,28 @@ export default new Router({
             children: [
                 {
                     path: '/Home',
+=======
+            name: 'framework',
+            component: framework,
+            redirect:Home,
+            children:[
+                {
+                    path:'/Home',
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
                     name: 'home',
                     component: Home
                 },
                 {
+<<<<<<< HEAD
                     path: '/ctiList',
+=======
+                    path:'/ctiList',
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
                     name: 'ctiList',
                     component: ctiList
                 },
                 {
+<<<<<<< HEAD
                     path: '/MyctiList/',
                     name: 'MyctiList',
                     component: MyctiList
@@ -64,6 +81,16 @@ export default new Router({
                     path: 'ParticipateDetails',
                     name: 'ParticipateDetails',
                     component: ParticipateDetails
+=======
+                    path:'/MyctiList',
+                    name:'MyctiList',
+                    component:MyctiList
+                },
+                {
+                    path:'/ActivitiesDetails',
+                    name:'ActivitiesDetails',
+                    component:ActivitiesDetails
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
                 }
 
             ]

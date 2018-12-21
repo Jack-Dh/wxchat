@@ -19,12 +19,21 @@
                 vertical
                 :autoplay="2000"
                 indicator-color="white"
+<<<<<<< HEAD
                 style="width: 100%;height: 20px;font-size: 0.8rem"
                 :show-indicators="false"
         >
             <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
             <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
             <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
+=======
+                style="width: 100%;height: 20px"
+                :show-indicators="false"
+        >
+            <van-swipe-item>1</van-swipe-item>
+            <van-swipe-item>2</van-swipe-item>
+            <van-swipe-item>3</van-swipe-item>
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
         </van-swipe>
 
 
@@ -50,11 +59,18 @@
 
         </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
         <!--暂无活动配置-->
         <div class="No_gifts">
             <img src="../assets/img/index/No_gifts.png"/>
             <p>暂无礼品配置~</p>
+<<<<<<< HEAD
             <p>{{t}}</p>
+=======
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
         </div>
     </div>
 </template>
@@ -65,6 +81,7 @@
         name: 'home',
         data() {
             return {
+<<<<<<< HEAD
                 bannerImages: [],//首页轮播图,
                 t:''
 
@@ -84,6 +101,18 @@
            })
         },
 
+=======
+                bannerImages: []//首页轮播图
+            }
+        },
+        created: function () {
+            //首页轮播图
+            this.$axios.get(this.$store.state.bannerImages).then(res => {
+                this.bannerImages = res.data.rs.bannerImages
+            })
+        },
+        components: {}
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
     }
 </script>
 <style scoped>
@@ -96,8 +125,13 @@
         display: flex;
         justify-content: space-around;
         padding: 2%;
+<<<<<<< HEAD
         text-align: center;
         font-size: 0.8rem;
+=======
+        font-size: 0.5rem;
+        text-align: center;
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
     }
     .menuList img{
         width: 60%;;

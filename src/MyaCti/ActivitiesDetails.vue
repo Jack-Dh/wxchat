@@ -8,6 +8,7 @@
             <van-tabs v-model="active" @click="switchCti">
                 <van-tab title="全部"></van-tab>
                 <van-tab title="待审核"></van-tab>
+<<<<<<< HEAD
                 <van-tab title="已通过"></van-tab>
                 <van-tab title="已拒绝"></van-tab>
             </van-tabs>
@@ -31,6 +32,13 @@
 
 
 
+=======
+                <van-tab title="已拒绝"></van-tab>
+                <van-tab title="已通过"></van-tab>
+            </van-tabs>
+        </div>
+{{index}}
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
     </div>
 </template>
 <script>
@@ -41,6 +49,7 @@
                 active: 0,
                 index:'',
                 user:[],//用户信息
+<<<<<<< HEAD
                 useractivity:[],//当前用户参加的所有活动
                 tag:'',//是否显示标签
                 notag:''//暂无数据
@@ -72,13 +81,21 @@
 
                 })
             },
+=======
+            }
+        },
+        methods: {
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
             switchCti(index, title) {
                 console.log(index)
                 console.log(title)
                 this.index=index
+<<<<<<< HEAD
 
                 // 用户订单状态,01:待审核 02:审核通过 03:审核拒绝 为空:all
                 this.userList(this.user.id,index=='0'?"":"0"+index)
+=======
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
             },
             // test(){
             //     this.$axios.get('/xxx/Api/Mobile/Quality/QualityInfoRankBySID.aspx',{
@@ -94,6 +111,7 @@
         created:function () {
             //
             // setInterval(this.test,100)
+<<<<<<< HEAD
 
 
             //用户信息
@@ -105,6 +123,13 @@
             //查询该用户所有信息
 
 
+=======
+            //用户信息
+            this.$axios.get(this.$store.state.user).then(res=>{
+                this.user=res.data.rs
+                console.log(this.user)
+            })
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
         }
     }
 </script>

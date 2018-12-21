@@ -9,6 +9,10 @@
             <van-cell title="我的参与" is-link to="ActivitiesDetails"/>
             <van-cell title="其他" is-link />
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
     </div>
 </template>
 
@@ -24,6 +28,10 @@
             //用户信息
             this.$axios.get(this.$store.state.user).then(res=>{
                 this.user=res.data.rs
+<<<<<<< HEAD
+=======
+                console.log(this.user)
+>>>>>>> c75b95803d391ab0c19be27eed7e4577727d8ad0
             })
         }
     }
